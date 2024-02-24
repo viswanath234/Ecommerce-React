@@ -10,7 +10,7 @@ const cors = require("cors");
 app.use(express.json());
 app.use(
   cors({
-    origin: ["https://ecommerce-react-frontend-silk.vercel.app/"],
+    origin: ["https://ecommerce-react-frontend-silk.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true,
   })
