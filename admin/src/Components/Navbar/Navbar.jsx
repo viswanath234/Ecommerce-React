@@ -1,6 +1,6 @@
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
-import navProfile from "../../assets/nav-Profile.svg";
+import navProfile from "../../assets/nav-profile.svg";
 
 const Navbar = () => {
   return (
