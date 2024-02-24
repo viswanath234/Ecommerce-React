@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import axios from "axios";
 import Navbar from "./Components/Navbar/Navbar";
 import Shop from "./Pages/Shop";
 import ShopCategory from "./Pages/ShopCategory";
@@ -12,6 +13,11 @@ import women_banner from "./Components/Assets/banner_women.png";
 import kid_banner from "./Components/Assets/banner_kids.png";
 
 function App() {
+  axios.defaults.withCredentials = true;
+  axios
+    .post("https://ecommerce-react-peach-gamma.vercel.app/")
+    .then((result) => console.log(result))
+    .catch((err) => console.log(err));
   return (
     <div>
       <BrowserRouter>
