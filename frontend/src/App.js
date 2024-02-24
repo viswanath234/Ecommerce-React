@@ -15,7 +15,7 @@ import kid_banner from "./Components/Assets/banner_kids.png";
 function App() {
   axios.defaults.withCredentials = true;
   axios
-    .post("https://ecommerce-react-admin-rose.vercel.app")
+    .get("https://ecommerce-react-admin-rose.vercel.app")
     .then((result) => console.log(result))
     .catch((err) => console.log(err));
   return (
